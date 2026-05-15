@@ -10,7 +10,7 @@ const app = express();
 
 app.use(express.json());
 
-app.use('/api/auth_routes', require('./routes/auth_routes'));
+app.use('/api/auth_routes', require('./auth-service-practice/routes/auth_routes'));
 
 const limiter = rateLimit({
   windowMs: 15 * 60 * 1000, 
